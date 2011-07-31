@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, HomeActivity!</string>
+	<string name="app_name">PNT</string>
+	<string name="btn_update"> Nouvelle numérotation</string>
+	<string name="btn_undo_update"> Aide?            </string>
+	<string name="btn_list_modif"> Modifications</string>
+	<string name="bienvenu_textview"> Bienvenue ... </string>
+	<string name="mis_a_jour"> Mise(s) à jour</string>
+	<string name="nochanges"> Pas de changements effectués dans Vos contacts
+	</string>
+	<string name="btn_others">Auteurs</string>
+	<string name="btn_help">Aide </string>
+	<string name="presentation">PNT (Plan de numérotation du Togo)est une
+		application qui vous permet de mettre à jour la liste de vos contacts
+		suivant le nouveau Plan de Numérotation</string>
+
+	<string name="aide_text"> Afficher la présente aide à l\'utilisation de PNT
+	</string>
+
+	<string name="nouvel_num_text"> Effectuer la mise à jour de vos contact du Togo
+		uniquement, et en une seule touche </string>
+	<string name="Modifications_text"> Afficher les modification qui ont eu lieu dans la
+		liste de vos Contacts </string>
+	<string name="auteur_text"> Avoir un apercus sur les auteurs de PlaNT</string>
+
+	<string name="auteur1"> Aristide Thomas Mendoo ,developpeur J2ME/Android
+		email: mendoo.aristide@gmail.com</string>
+	<string name="auteur2"> Abiré Tchilalo Marie- Reine KAZI , Ingénieur
+		Télécom email: abirekaz@gmail.com</string>
+</resources>

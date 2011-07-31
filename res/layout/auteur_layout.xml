@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/border_popup">
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:gravity="center_vertical|center_horizontal">
+		<LinearLayout android:id="@+id/auteur1_lineair"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginTop="10px" android:layout_marginBottom="10px">
+			<TextView android:text="@string/auteur1"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:gravity="center_vertical|center_horizontal"
+				android:textColor="@color/noir" android:textStyle="bold"></TextView>
+		</LinearLayout>
+		<LinearLayout android:id="@+id/line_linear1"
+			android:layout_below="@id/auteur1_lineair" android:layout_width="fill_parent"
+			android:layout_height="2px" android:background="@color/vert1"></LinearLayout>
+		<LinearLayout android:id="@+id/auteur2_lineair"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_below="@id/line_linear1" android:gravity="center_vertical|center_horizontal"
+			android:layout_marginTop="10px" android:layout_marginBottom="10px">
+			<TextView android:text="@string/auteur2"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:gravity="center_vertical|center_horizontal"
+				android:textStyle="bold" android:textColor="@color/noir"></TextView>
+		</LinearLayout>
+		<LinearLayout android:id="@+id/line2_linear"
+			android:layout_below="@id/auteur2_lineair" android:layout_width="fill_parent"
+			android:layout_height="2px" android:background="@color/vert1"></LinearLayout>
+		<LinearLayout android:id="@+id/button_auteur_linear"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:gravity="center_vertical|center_horizontal"
+			android:layout_below="@id/line2_linear" android:layout_marginTop="10px"
+			android:layout_marginBottom="10px">
+			<Button android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:paddingLeft="10px"
+				android:paddingRight="10px" android:id="@+id/auteur_ok"
+				android:text="OK" android:textColor="@color/blancs"
+				android:textStyle="bold" android:background="@drawable/selection_button"></Button>
+		</LinearLayout>
+
+	</RelativeLayout>
+</ScrollView>

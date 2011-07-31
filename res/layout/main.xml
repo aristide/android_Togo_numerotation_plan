@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:gravity="center_vertical"
+	android:background="@color/blancs">
+	<LinearLayout android:paddingTop="5px"
+		android:paddingBottom="5px" android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:id="@+id/header_bar"
+		android:background="@drawable/header_bar">
+		<Button android:text="@string/btn_help" android:id="@+id/btn_help"
+			android:textColor="@color/blancs" android:textStyle="bold"
+			android:background="@drawable/btn_help" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:paddingLeft="15px"
+			android:paddingRight="15px"></Button>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/bienvenu_bar"
+		android:layout_below="@id/header_bar" android:layout_marginTop="20px"
+		android:layout_marginBottom="20px" android:gravity="center_vertical">
+		<TextView android:id="@+id/bienvenu_textview"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:text="@string/bienvenu_textview" android:textStyle="bold"
+			android:paddingLeft="20px" android:textColor="@color/vert1" />
+	</LinearLayout>
+
+	<LinearLayout android:layout_below="@id/bienvenu_bar"
+		android:id="@+id/btn_contener" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<ScrollView android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				<LinearLayout android:id="@+id/btn_line1"
+					android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<Button android:id="@+id/btn_update" android:text="@string/btn_update"
+						android:layout_height="wrap_content" android:layout_width="10px"
+						android:layout_marginLeft="10px" android:layout_marginRight="10px"
+						android:layout_marginTop="10px" android:layout_weight="0.5"
+						android:drawableTop="@drawable/numerotation" android:textColor="@color/vert1"
+						android:textStyle="bold" android:background="@drawable/btn_update"></Button>
+					<Button android:id="@+id/btn_undo_update" android:text="@string/btn_undo_update"
+						android:layout_height="wrap_content" android:layout_width="10px"
+						android:layout_marginLeft="10px" android:layout_marginRight="10px"
+						android:layout_marginTop="10px" android:layout_weight="0.5"
+						android:drawableTop="@drawable/aide" android:textColor="@color/vert1"
+						android:textStyle="bold" android:background="@drawable/btn_undo_update"></Button>
+				</LinearLayout>
+				<LinearLayout android:id="@+id/bnt_line2"
+					android:layout_below="@id/btn_line1" android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+					<Button android:id="@+id/btn_see_changes" android:text="@string/btn_list_modif"
+						android:background="@drawable/btn_see_changes"
+						android:layout_height="wrap_content" android:layout_width="10px"
+						android:layout_marginLeft="10px" android:layout_marginRight="10px"
+						android:layout_marginTop="10px" android:layout_weight="0.5"
+						android:drawableTop="@drawable/modifications" android:textColor="@color/vert1"
+						android:textStyle="bold"></Button>
+					<Button android:id="@+id/btn_others" android:text="@string/btn_others"
+						android:background="@drawable/btn_others" android:layout_height="wrap_content"
+						android:layout_width="10px" android:layout_marginLeft="10px"
+						android:layout_marginRight="10px" android:layout_marginTop="10px"
+						android:layout_weight="0.5" android:drawableTop="@drawable/auteurs"
+						android:textColor="@color/vert1" android:drawablePadding="2px"
+						android:gravity="center_horizontal" android:textStyle="bold"></Button>
+				</LinearLayout>
+			</RelativeLayout>
+		</ScrollView>
+	</LinearLayout>
+
+	<LinearLayout android:layout_below="@id/btn_contener"
+		android:id="@+id/line3" android:layout_marginTop="50px"
+		android:layout_height="1px" android:layout_width="fill_parent"
+		android:gravity="center_horizontal" android:background="@color/vert1"></LinearLayout>
+</RelativeLayout>

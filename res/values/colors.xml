@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="blancs">#FFFFFF</color>
+	<color name="bleu">#0000FF</color>
+	<color name="rouge">#FF0000</color>
+	<color name="vert">#00FF00</color>
+	<color name="noir">#000000</color>
+	<color name="vert1">#477b36</color>
+	<color name="vert2">#63a34a</color>
+</resources>

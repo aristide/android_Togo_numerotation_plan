@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/border_popup">
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<LinearLayout android:id="@+id/aide_lineaire"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginTop="5px" android:layout_marginBottom="5px">
+			<ImageView android:src="@drawable/aide"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageView>
+			<TextView android:text="@string/aide_text"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:paddingLeft="10px" android:paddingRight="5px"
+				android:textStyle="bold" android:textColor="@color/noir"></TextView>
+		</LinearLayout>
+		<!-- partie nouvelle numerotation -->
+		<LinearLayout android:id="@+id/nouvel_lineaire"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginTop="5px" android:layout_marginBottom="5px"
+			android:layout_below="@id/aide_lineaire">
+			<ImageView android:src="@drawable/numerotation"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageView>
+			<TextView android:text="@string/nouvel_num_text"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:paddingLeft="10px" android:paddingRight="5px"
+				android:textStyle="bold" android:textColor="@color/noir"></TextView>
+		</LinearLayout>
+		<!--  partie list modifications  -->
+		<LinearLayout android:id="@+id/modification_linear"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginTop="5px" android:layout_marginBottom="5px"
+			android:layout_below="@id/nouvel_lineaire">
+			<ImageView android:src="@drawable/modifications"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageView>
+			<TextView android:text="@string/Modifications_text"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:paddingLeft="10px" android:paddingRight="5px"
+				android:textStyle="bold" android:textColor="@color/noir"></TextView>
+		</LinearLayout>
+		<!-- partie auteurs  -->
+		<LinearLayout android:id="@+id/auteur_linear"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginTop="5px" android:layout_marginBottom="5px"
+			android:layout_below="@id/modification_linear">
+			<ImageView android:src="@drawable/auteurs"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageView>
+			<TextView android:text="@string/auteur_text"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:paddingLeft="10px" android:paddingRight="5px"
+				android:textStyle="bold" android:textColor="@color/noir"></TextView>
+		</LinearLayout>
+		<!-- partie   boutton-->
+		<LinearLayout android:id="@+id/button_linear"
+			android:gravity="center_horizontal|center_vertical"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_below="@id/auteur_linear">
+			<Button android:id="@+id/ok_aide" android:background="@drawable/selection_button"
+				android:text="OK" android:textColor="@color/blancs"
+				android:textStyle="bold" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:paddingLeft="10px"
+				android:paddingRight="10px"></Button>
+
+		</LinearLayout>
+	</RelativeLayout>
+</ScrollView>
